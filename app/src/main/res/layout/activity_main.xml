@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/childfamily"
+        android:scaleX="1"
+        android:scaleY="1"/>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e607060d"/>
+
+    <!-- Buttons -->
+
+    <Button
+        android:id="@+id/hub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha=".9"
+        android:background="@drawable/icon_hub"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/toddler"
+        style="@style/MChatButtonstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha=".9"
+        app:layout_constraintCircle="@+id/hub"
+        app:layout_constraintCircleAngle="0"
+        app:layout_constraintCircleRadius="120dp"
+
+        />
+
+    <Button
+
+        android:id="@+id/man"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha=".9"
+        android:background="@drawable/icon_man"
+        app:layout_constraintCircle="@+id/hub"
+        app:layout_constraintCircleAngle="288"
+        app:layout_constraintCircleRadius="120dp" />
+
+    <Button
+        android:id="@+id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha=".9"
+        android:background="@drawable/icon_map"
+        app:layout_constraintCircle="@+id/hub"
+        app:layout_constraintCircleAngle="144"
+        app:layout_constraintCircleRadius="120dp" />
+
+    <Button
+        android:id="@+id/jigsaw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha=".9"
+        android:background="@drawable/icon_jigsaw"
+        app:layout_constraintCircle="@+id/hub"
+        app:layout_constraintCircleAngle="72"
+        app:layout_constraintCircleRadius="120dp" />
+
+    <Button
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha=".9"
+        android:background="@drawable/icon_mail"
+        app:layout_constraintCircle="@+id/hub"
+        app:layout_constraintCircleAngle="216"
+        app:layout_constraintCircleRadius="120dp" />
+
+    <!-- Text Labels -->
+
+    <TextView
+        android:id="@+id/toddler_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:fontFamily="casual"
+        android:text="M-CHAT"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/toddler"
+        app:layout_constraintLeft_toLeftOf="@id/toddler"
+        app:layout_constraintRight_toRightOf="@id/toddler" />
+
+    <TextView
+        android:id="@+id/jigsaw_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:fontFamily="casual"
+        android:text="ASD Info"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/jigsaw"
+        app:layout_constraintLeft_toLeftOf="@id/jigsaw"
+        app:layout_constraintRight_toRightOf="@id/jigsaw" />
+
+    <TextView
+        android:id="@+id/man_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:fontFamily="casual"
+        android:text="RBQ-2"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/man"
+        app:layout_constraintLeft_toLeftOf="@id/man"
+        app:layout_constraintRight_toRightOf="@id/man" />
+
+    <TextView
+        android:id="@+id/map_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:fontFamily="casual"
+        android:text="Locate us"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/map"
+        app:layout_constraintRight_toRightOf="@id/map"
+        app:layout_constraintTop_toBottomOf="@id/map" />
+
+    <TextView
+        android:id="@+id/mail_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:fontFamily="casual"
+        android:text="Contact us"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/mail"
+        app:layout_constraintRight_toRightOf="@id/mail"
+        app:layout_constraintTop_toBottomOf="@id/mail" />
+
+
+</android.support.constraint.ConstraintLayout>

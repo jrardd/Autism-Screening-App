@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Quiz App V2</string>
+    <string name="mchat_intro">Please answer these questions about your child. Keep in mind how your child usually behaves. If you have seen your child do the behavior a few times, but he or she does not usually do it, then please answer no. Please choose yes or no for every question. Thank you very much.</string>
+    <string name="mchat_info">*The Modified Checklist for Autism in Toddlers-Revised (M-CHAT-R™) is a scientifically validated tool for screening children between 16 and 30 months of age that assesses risk for autism spectrum disorder (ASD).</string>
+    <string name="question1">If you point at something across the room, does your child look at it?</string>
+
+
+    <string-array name="Questions">
+        <item name="question1">If you point at something across the room, does your child look at it?</item>
+        <item name="question2">Have you ever wondered if your child might be deaf?</item>
+        <item name="question3">Does your child play pretend or make-believe?</item>
+        <item name="question4">Does your child like climbing on things?</item>
+        <item name="question5">Does your child make unusual finger movements near his or her eyes?</item>
+        <item name="question6">Does your child point with one finger to ask for something or to get help?</item>
+        <item name="question7">Does your child point with one finger to show you something interesting?</item>
+        <item name="question8">Is your child interested in other children?</item>
+        <item name="question9">Does your child show you things by bringing them to you or holding them up for you to see - not to get help, but just to share?</item>
+        <item name="question10">Does your child respond when you call his or her name?</item>
+        <item name="question11">When you smile at your child, does he or she smile back at you?</item>
+        <item name="question12">Does your child get upset by everyday noises?</item>
+        <item name="question13">Does your child walk?</item>
+        <item name="question14">Does your child look you in the eye when you are talking to him or her, playing with him or her, or dressing him or her? </item>
+        <item name="question15">Does your child try to copy what you do?</item>
+        <item name="question16">If you turn your head to look at something, does your child look around to see what you are looking at?</item>
+        <item name="question17">Does your child try to get you to watch him or her?</item>
+        <item name="question18">Does your child understand when you tell him or her to do something?</item>
+        <item name="question19">If something new happens, does your child look at your face to see how you feel about it?</item>
+        <item name="question20">Does your child like movement activities?</item>
+    </string-array>
+    <string-array name="Examples">
+        <item name="example1">If you point at a toy or an animal, does your child look at the toy or animal?</item>
+        <item name="example2">No example</item>
+        <item name="example3">Pretend to drink from an empty cup, pretend to talk on a phone, or pretend to feed a doll or stuffed animal?</item>
+        <item name="example4">Furniture, playground equipment, or stairs.</item>
+        <item name="example5">Does your child wiggle his or her fingers close to his or her eyes?</item>
+        <item name="example6">Pointing to a snack or toy that is out of reach.</item>
+        <item name="example7">Pointing to an airplane in the sky or a big truck in the road.</item>
+        <item name="example8">Does your child watch other children, smile at them, or go to them?</item>
+        <item name="example9">Showing you a flower, a stuffed animal, or a toy truck.</item>
+        <item name="example10">Does he or she look up, talk or babble, or stop what he or she is doing when you call his or her name?</item>
+        <item name="example11">No example</item>
+        <item name="example12">Does your child scream or cry to noise such as a vacuum cleaner or loud music?</item>
+        <item name="example13">No example</item>
+        <item name="example14">No example</item>
+        <item name="example15">Wave bye-bye, clap, or make a funny noise when you do.</item>
+        <item name="example16">No example</item>
+        <item name="example17">Does your child look at you for praise, or say “look” or “watch me”?</item>
+        <item name="example18">If you don’t point, can your child understand “put the book on the chair” or “bring me the blanket”?</item>
+        <item name="example19">If he or she hears a strange or funny noise, or sees a new toy, will he or she look at your face?.</item>
+        <item name="example20">Being swung or bounced on your knee</item>
+    </string-array>
+
+</resources>

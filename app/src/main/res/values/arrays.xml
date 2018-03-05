@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="ASDRiskAnswers">
+        <item name = "answer1">@id/no_button</item>
+        <item name = "answer2">@id/yes_button</item>
+        <item name = "answer3">@id/no_button</item>
+        <item name = "answer4">@id/no_button</item>
+        <item name = "answer5">@id/yes_button</item>
+        <item name = "answer6">@id/no_button</item>
+        <item name = "answer7">@id/no_button</item>
+        <item name = "answer8">@id/no_button</item>
+        <item name = "answer9">@id/no_button</item>
+        <item name = "answer10">@id/no_button</item>
+        <item name = "answer11">@id/no_button</item>
+        <item name = "answer12">@id/yes_button</item>
+        <item name = "answer13">@id/no_button</item>
+        <item name = "answer14">@id/no_button</item>
+        <item name = "answer15">@id/no_button</item>
+        <item name = "answer16">@id/no_button</item>
+        <item name = "answer17">@id/no_button</item>
+        <item name = "answer18">@id/no_button</item>
+        <item name = "answer19">@id/no_button</item>
+        <item name = "answer20">@id/no_button</item>
+    </integer-array>
+</resources>
