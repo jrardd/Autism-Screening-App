@@ -152,5 +152,59 @@
         app:layout_constraintRight_toRightOf="@id/mail"
         app:layout_constraintTop_toBottomOf="@id/mail" />
 
+    <ImageButton
+        android:id="@+id/instagram"
+        android:background="@drawable/instagram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageButton
+        android:id="@+id/facebook"
+        android:background="@drawable/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias=".35"
+        app:layout_constraintBottom_toBottomOf="@id/instagram"
+       />
+
+    <ImageButton
+        android:id="@+id/twitter"
+        android:background="@drawable/twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias=".65"
+        app:layout_constraintBottom_toBottomOf="@id/instagram"
+        />
+
+    <ImageButton
+        android:id="@+id/hub_info"
+        android:background="@drawable/hub_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageButton
+        android:id="@+id/settings"
+        android:background="@drawable/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
 
 </android.support.constraint.ConstraintLayout>
