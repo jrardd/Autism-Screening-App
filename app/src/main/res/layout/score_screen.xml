@@ -18,31 +18,35 @@
         android:text="M-CHAT-R™"
         android:textColor="#afffffff"
         android:textSize="50sp"
-        android:textStyle=""
-        app:layout_constraintBottom_toTopOf="@id/score" />
-
-    <TextView
-        android:id="@+id/score"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-smallcaps"
-        android:text="Score"
-        android:textColor="#c3ffffff"
-        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias=".20" />
+        app:layout_constraintVertical_bias=".05"
+         />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text=""
+        android:textSize="130sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".18" />
 
     <Button
+        style = "@style/HomeButtonStyle"
         android:id="@+id/home_button"
-        android:background="@drawable/icon_hub"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:alpha=".8"
-        app:layout_constraintVertical_bias=".35"
+        app:layout_constraintVertical_bias=".5"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -74,7 +78,7 @@
         android:fontFamily="sans-serif-smallcaps"
         android:gravity="center"
         android:padding="15dp"
-        android:text="@string/medium_risk"
+        android:text="Risk"
         android:textColor="#c0ffffff"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -89,7 +93,7 @@
         android:fontFamily="sans-serif-smallcaps"
         android:gravity="center"
         android:paddingHorizontal="30dp"
-        android:text="@string/high_risk_description"
+        android:text="Description"
         android:textColor="#caffffff"
         android:textSize="18sp"
         app:layout_constraintLeft_toLeftOf="parent"

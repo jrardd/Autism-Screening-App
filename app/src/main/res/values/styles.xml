@@ -66,5 +66,9 @@
         <item name="android:background">@drawable/next_btn</item>
     </style>
 
+    <style name="HomeButtonStyle" parent="Base.Widget.AppCompat.Button">
+        <item name="android:background">@drawable/home_btn</item>
+    </style>
+
 
 </resources>

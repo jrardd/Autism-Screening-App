@@ -1,6 +1,7 @@
 package com.example.android.quizappv2;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,31 +20,33 @@ public class ScoreScreen extends AppCompatActivity {
         TextView scoreBox = findViewById(R.id.score);
         TextView riskBox = findViewById(R.id.risk);
         TextView description = findViewById(R.id.description);
-        Button home = findViewById(R.id.home_button);
 
-        scoreBox.setText("Score: " + score);
-        displayRisk(score, riskBox, description);
+        scoreBox.setText(String.valueOf(score));
+        displayValues(score, riskBox, description, scoreBox);
 
     }
 
-    public void displayRisk(int score, TextView riskBox, TextView description) {
+    public void displayValues(int score, TextView riskBox, TextView description, TextView scoreBox) {
+
+
         if (score <= 2) {
             riskBox.setText("A score of " + score + " indicates low-risk");
             description.setTextSize(18);
             description.setText(R.string.low_risk_description);
+            scoreBox.setTextColor(Color.parseColor("#278f5b"));
         }
 
         else if(score > 2 && score <= 7) {
             riskBox.setText("A score of " + score + " indicates medium-risk");
             description.setText(R.string.medium_risk_description);
-            description.setTextSize(13);
-        }
+            description.setTextSize(11);
+            scoreBox.setTextColor(Color.parseColor("#c1ab00"));        }
 
         else {
             riskBox.setText("A score of " + score + " indicates high-risk");
-            description.setText(R.string.high_risk_description);
             description.setTextSize(18);
-        }
+            description.setText(R.string.high_risk_description);
+            scoreBox.setTextColor(Color.parseColor("#790600"));        }
 
 
     }
