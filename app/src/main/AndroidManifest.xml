@@ -24,7 +24,8 @@
         <activity android:name=".ExamQuestions" />
         <activity
             android:name=".ExampleWindow"
-            android:theme="@style/AppTheme.ExampleStyle"></activity>
+            android:theme="@style/AppTheme.ExampleStyle" />
+        <activity android:name=".ScoreScreen"></activity>
     </application>
 
 </manifest>

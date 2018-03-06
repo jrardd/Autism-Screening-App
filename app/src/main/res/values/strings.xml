@@ -5,6 +5,38 @@
     <string name="question1">If you point at something across the room, does your child look at it?</string>
 
 
+    <!-- Score screen strings -->
+
+    <string name="low_risk">A score of 2 indicates Low-Risk</string>
+
+    <string name="low_risk_description">If child is younger than 24 months, screen again after
+        second birthday. No further action required unless surveillance indicates risk for ASD.</string>
+
+    <string name="medium_risk">A score of 3 indicates Low-Risk</string>
+
+    <string name="medium_risk_description">Administer the Follow-up (second stage of M-CHAT-R/F) to
+        get additional information about at-risk responses. If M-CHAT-R/F score remains at 2 or higher,
+        the child has screened positive. Action required: refer child for diagnostic evaluation and
+        eligibility evaluation for early intervention. If score on Follow-up is 0-1, child has screened
+        negative. No further action required unless surveillance indicates risk for ASD. Child should
+        be re-screened at future well-child visits.</string>
+
+    <string name="high_risk_description">It is acceptable to bypass the Follow-up and refer immediately
+        for diagnostic evaluation and eligibility evaluation for early intervention.</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <string-array name="Questions">
         <item name="question1">If you point at something across the room, does your child look at it?</item>
         <item name="question2">Have you ever wondered if your child might be deaf?</item>

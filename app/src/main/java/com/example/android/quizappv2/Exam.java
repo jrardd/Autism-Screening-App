@@ -19,5 +19,7 @@ public class Exam extends AppCompatActivity {
     public void startExam(View view){
         Intent i = new Intent(this, ExamQuestions.class);
         startActivity(i);
+        overridePendingTransition(R.anim.fade_out, R.anim.fade_in);
+        finish();
     }
 }

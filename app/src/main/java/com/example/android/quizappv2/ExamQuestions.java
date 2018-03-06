@@ -23,7 +23,7 @@ public class ExamQuestions extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.question1);
+        setContentView(R.layout.exam_questions);
 
 
     }
@@ -45,14 +45,20 @@ public class ExamQuestions extends AppCompatActivity {
         RadioGroup choices = findViewById(R.id.radio_group);
 
         if (choices.getCheckedRadioButtonId() == -1) {
-            displayToast();
+            displayWarningToast();
         } else {
             i++;
-            checkAnswer();
-            updateScore();
-            updateQuestion();
-            updateProgressBar();
-            choices.clearCheck();
+            if (i == 20) {
+                checkAnswer();
+                updateScore();
+                toScoreScreen();
+            } else {
+                checkAnswer();
+                updateScore();
+                updateQuestion();
+                updateProgressBar();
+                choices.clearCheck();
+            }
         }
     }
 
@@ -98,7 +104,7 @@ public class ExamQuestions extends AppCompatActivity {
         scoreBox.setText("Score: " + scoreText);
     }
 
-    public void displayToast() {
+    public void displayWarningToast() {
         LayoutInflater myInflater = LayoutInflater.from(this);
         View view = myInflater.inflate(R.layout.toast_message, (ViewGroup) findViewById(R.id.toast_root));
         Toast warning = new Toast(this);
@@ -106,6 +112,14 @@ public class ExamQuestions extends AppCompatActivity {
         warning.setGravity(Gravity.CENTER, 0, 0);
         warning.setDuration(Toast.LENGTH_SHORT);
         warning.show();
+    }
+
+    public void toScoreScreen() {
+        Intent i = new Intent(ExamQuestions.this, ScoreScreen.class);
+        i.putExtra("score", score);
+        startActivity(i);
+        overridePendingTransition(R.anim.fade_out, R.anim.fade_in);
+        finish();
     }
 
 }
