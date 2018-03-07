@@ -56,7 +56,9 @@ public class ScoreScreen extends AppCompatActivity {
     }
 
     public void infoButton(View view) {
-        Intent i = new Intent(ScoreScreen.this, ExampleWindow.class);
+        String text = getResources().getString(R.string.mchat_description);
+        Intent i = new Intent(ScoreScreen.this, ScoreTemplate.class);
+        i.putExtra("scoreTemplate", text);
         startActivity(i);
     }
 

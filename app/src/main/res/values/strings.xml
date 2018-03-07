@@ -24,19 +24,14 @@
     <string name="high_risk_description">It is acceptable to bypass the Follow-up and refer immediately
         for diagnostic evaluation and eligibility evaluation for early intervention.</string>
 
-    <string name = "email_body_text"></string>
-
-
-
-
-
-
-
-
-
-
-
-
+    <string name="mchat_description">The M-CHAT-R can be administered and scored as part of a well-child
+        care visit, and also can be used by specialists or other professionals to assess risk for ASD.
+        The primary goal of the M-CHAT-R is to maximize sensitivity, meaning to detect as many cases
+        of ASD as possible. Therefore, there is a high false positive rate, meaning that not all children
+        who score at risk will be diagnosed with ASD. Users should be aware that although a significant
+        number of children who screen positive on the M-CHAT-R will not be diagnosed with ASD, these
+        children are at high risk for other developmental disorders or delays, and therefore, evaluation
+        is warranted for any child who screens positive.</string>
 
 
     <string-array name="Questions">

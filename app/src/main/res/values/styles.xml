@@ -8,7 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="AppTheme.ExampleStyle">
+    <style name="AppTheme.PopupStyle">
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowCloseOnTouchOutside">true</item>
     </style>
@@ -74,7 +74,9 @@
         <item name="android:background">@drawable/contact_btn</item>
     </style>
 
-
+    <style name="HintButtonStyle" parent="Base.Widget.AppCompat.Button">
+        <item name="android:background">@drawable/scorescreen_hint_btn</item>
+    </style>
 
 
 </resources>
