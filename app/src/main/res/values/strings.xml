@@ -24,6 +24,8 @@
     <string name="high_risk_description">It is acceptable to bypass the Follow-up and refer immediately
         for diagnostic evaluation and eligibility evaluation for early intervention.</string>
 
+    <string name = "email_body_text"></string>
+
 
 
 

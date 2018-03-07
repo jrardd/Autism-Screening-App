@@ -12,12 +12,10 @@
         android:background="@drawable/childfamily"
         />
 
-
-
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#e607060d"/>
+        android:background="#d707060d"/>
 
     <!-- Buttons -->
 

@@ -70,5 +70,11 @@
         <item name="android:background">@drawable/home_btn</item>
     </style>
 
+    <style name="ContactButtonStyle" parent="Base.Widget.AppCompat.Button">
+        <item name="android:background">@drawable/contact_btn</item>
+    </style>
+
+
+
 
 </resources>

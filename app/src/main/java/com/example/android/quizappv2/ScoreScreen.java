@@ -2,10 +2,10 @@ package com.example.android.quizappv2;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 public class ScoreScreen extends AppCompatActivity {
@@ -34,26 +34,40 @@ public class ScoreScreen extends AppCompatActivity {
             description.setTextSize(18);
             description.setText(R.string.low_risk_description);
             scoreBox.setTextColor(Color.parseColor("#278f5b"));
-        }
-
-        else if(score > 2 && score <= 7) {
+        } else if (score > 2 && score <= 7) {
             riskBox.setText("A score of " + score + " indicates medium-risk");
             description.setText(R.string.medium_risk_description);
             description.setTextSize(11);
-            scoreBox.setTextColor(Color.parseColor("#c1ab00"));        }
-
-        else {
+            scoreBox.setTextColor(Color.parseColor("#c1ab00"));
+        } else {
             riskBox.setText("A score of " + score + " indicates high-risk");
             description.setTextSize(18);
             description.setText(R.string.high_risk_description);
-            scoreBox.setTextColor(Color.parseColor("#790600"));        }
+            scoreBox.setTextColor(Color.parseColor("#790600"));
+        }
 
 
     }
 
-    public void homeButton(View view){
+    public void homeButton(View view) {
         finish();
         overridePendingTransition(R.anim.fade_out, R.anim.fade_in);
 
+    }
+
+    public void infoButton(View view) {
+        Intent i = new Intent(ScoreScreen.this, ExampleWindow.class);
+        startActivity(i);
+    }
+
+    public void composeEmail(View view) {
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setData(Uri.parse("mailto:"));
+        intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"info@autism-society.org"});
+        intent.putExtra(Intent.EXTRA_SUBJECT, "MCHAT-R/F Screening Results via Autism-Screening App");
+
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
     }
 }
