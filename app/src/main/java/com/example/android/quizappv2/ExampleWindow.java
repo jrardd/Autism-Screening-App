@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+import android.view.View;
 import android.widget.TextView;
 
 public class ExampleWindow extends Activity {
@@ -33,6 +34,10 @@ public class ExampleWindow extends Activity {
         int height = dm.heightPixels;
 
         getWindow().setLayout((int)(width*0.8), (int)(height*0.6));
+    }
+
+    public void close(View view){
+        finish();
     }
 
 
