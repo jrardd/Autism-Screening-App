@@ -4,27 +4,26 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@color/soothingBlue">
+    >
 
 
     <TextView
-        android:text="1"
-        android:textSize="100sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="What is Autism?"
+        android:textColor="#fff"
+        android:textSize="40sp" />
+
+
+    <TextView
+        android:text="@string/autism_info"
+        android:textColor="#fff"
+        android:textSize="13sp"
+        android:padding="24dp"
+        android:gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-    <RadioButton
-        android:text="Yes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
-    <RadioButton
-        android:text="No"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    </RadioGroup>
 </LinearLayout>

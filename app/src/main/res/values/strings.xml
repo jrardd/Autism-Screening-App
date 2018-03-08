@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Quiz App V2</string>
+    <string name="app_name"></string>
     <string name="mchat_intro">Please answer these questions about your child. Keep in mind how your child usually behaves. If you have seen your child do the behavior a few times, but he or she does not usually do it, then please answer no. Please choose yes or no for every question. Thank you very much.</string>
     <string name="mchat_info">*The Modified Checklist for Autism in Toddlers-Revised (M-CHAT-R™) is a scientifically validated tool for screening children between 16 and 30 months of age that assesses risk for autism spectrum disorder (ASD).</string>
     <string name="question1">If you point at something across the room, does your child look at it?</string>
@@ -32,6 +32,7 @@
         number of children who screen positive on the M-CHAT-R will not be diagnosed with ASD, these
         children are at high risk for other developmental disorders or delays, and therefore, evaluation
         is warranted for any child who screens positive.</string>
+    <string name="autism_info">Autism spectrum disorder (ASD) is a complex developmental disability; signs typically appear during early childhood and affect a person’s ability to communicate, and interact with others. ASD is defined by a certain set of behaviors and is a “spectrum condition” that affects individuals differently and to varying degrees. There is no known single cause of autism, but increased awareness and early diagnosis/intervention and access to appropriate services/supports lead to significantly improved outcomes. Some of the behaviors associated with autism include delayed learning of language; difficulty making eye contact or holding a conversation; difficulty with executive functioning, which relates to reasoning and planning; narrow, intense interests; poor motor skills’ and sensory sensitivities. Again, a person on the spectrum might follow many of these behaviors or just a few, or many others besides. The diagnosis of autism spectrum disorder is applied based on analysis of all behaviors and their severity.</string>
 
 
     <string-array name="Questions">

@@ -1,14 +1,10 @@
 package com.example.android.quizappv2;
 
 import android.content.Context;
-import android.os.Parcelable;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Layout;
-import android.util.Log;
-import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +12,7 @@ import android.widget.LinearLayout;
 
 public class ExamViewPager extends AppCompatActivity {
 
+    private android.support.v7.widget.Toolbar toolbar;
     private ViewPager viewPager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +20,9 @@ public class ExamViewPager extends AppCompatActivity {
         setContentView(R.layout.activity_exam_view_pager);
         viewPager = findViewById(R.id.view_pager);
         viewPager.setAdapter(new MyAdapter());
+
+        toolbar = findViewById(R.id.app_bar);
+        setSupportActionBar(toolbar);
     }
 
     public class MyAdapter extends PagerAdapter{
