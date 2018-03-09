@@ -1,29 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center">
 
+    <ImageView
+        android:id="@+id/autism_puzzle_logo"
+        android:src="@drawable/autismpuzzle"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:alpha=".75"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias=".05"/>
 
     <TextView
+        android:id="@+id/what_is_autism"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="What is Autism?"
-        android:textColor="#fff"
-        android:textSize="40sp" />
+        android:textColor="#fff3db"
+        android:textSize="45sp"
+        app:layout_constraintTop_toBottomOf="@id/autism_puzzle_logo"/>
 
 
     <TextView
         android:text="@string/autism_info"
-        android:textColor="#fff"
-        android:textSize="13sp"
+        android:textColor="#fff3db"
+        android:textSize="20sp"
+        android:textStyle="bold"
         android:padding="24dp"
         android:gravity="center"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/what_is_autism"/>
 
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>

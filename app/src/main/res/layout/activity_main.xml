@@ -14,7 +14,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#d7060a0d"
+        android:background="#e0010e15"
         android:elevation="-1dp"/>
 
     <!-- Buttons -->
@@ -64,11 +64,11 @@
         app:layout_constraintCircleRadius="120dp" />
 
     <Button
+        style="@style/AutismInfoButtonStyle"
         android:id="@+id/jigsaw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:alpha=".9"
-        android:background="@drawable/icon_jigsaw"
         app:layout_constraintCircle="@+id/hub"
         app:layout_constraintCircleAngle="72"
         app:layout_constraintCircleRadius="120dp" />

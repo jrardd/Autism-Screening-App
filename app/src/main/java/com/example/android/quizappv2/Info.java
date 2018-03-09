@@ -1,6 +1,7 @@
 package com.example.android.quizappv2;
 
 import android.content.Context;
+import android.support.constraint.ConstraintLayout;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -26,9 +27,9 @@ public class Info extends AppCompatActivity {
         setSupportActionBar(toolbar);
     }
 
-    public class MyAdapter extends PagerAdapter{
+    public class MyAdapter extends PagerAdapter {
         LayoutInflater layoutInflater;
-        int[] layouts={R.layout.one,R.layout.two,R.layout.three};
+        int[] layouts = {R.layout.one, R.layout.two, R.layout.three};
 
         @Override
         public int getCount() {
@@ -37,7 +38,7 @@ public class Info extends AppCompatActivity {
 
         @Override
         public boolean isViewFromObject(View view, Object object) {
-            return (view == (LinearLayout)object);
+            return (view == (ConstraintLayout) object);
         }
 
         @Override
@@ -53,7 +54,7 @@ public class Info extends AppCompatActivity {
 
         @Override
         public void destroyItem(ViewGroup container, int position, Object object) {
-            container.removeView((LinearLayout)object);
+            container.removeView((ConstraintLayout) object);
             String text = Integer.toString(R.string.mchat_description);
         }
     }

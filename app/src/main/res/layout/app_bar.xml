@@ -2,7 +2,10 @@
 <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#79000000">
+    android:background="#bf000000"
+   >
+
+
 
 
     <TextView
@@ -10,8 +13,9 @@
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="#fff5e3"
-        android:gravity="center_horizontal"
         android:layout_width="match_parent"
+        android:gravity="center"
         android:layout_height="wrap_content" />
+
 
 </android.support.v7.widget.Toolbar>

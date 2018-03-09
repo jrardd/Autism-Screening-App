@@ -44,6 +44,10 @@
         <item name="android:background">@drawable/home_mchat_btn</item>
     </style>
 
+    <style name="AutismInfoButtonStyle" parent="Base.Widget.AppCompat.Button">
+        <item name="android:background">@drawable/autism_info_btn</item>
+    </style>
+
 
     <!-- M-CHAT Button styles -->
     <style name="YesButtonStyle" parent="@android:style/Widget.CompoundButton.RadioButton">

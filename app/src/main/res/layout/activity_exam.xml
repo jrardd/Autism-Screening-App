@@ -4,14 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bluebubble"
+    android:background="@drawable/father_daughter"
     tools:context="com.example.android.quizappv2.Exam">
+
+    <include android:id="@+id/app_bar"
+        layout = "@layout/app_bar"
+        />
+
+    <View
+        android:background="#d6000e1a"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="-1dp" />
 
     <TextView
         android:text="M-CHAT-R™"
         android:textSize="50sp"
         android:textStyle="bold"
-        android:textColor="#000"
+        android:textColor="#FFF"
         android:fontFamily="sans-serif"
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
@@ -22,11 +32,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        app:cardBackgroundColor="#3968ccf1">
+        app:cardBackgroundColor="#39000000">
     <TextView
         android:text="@string/mchat_intro"
         android:textSize="16sp"
-        android:textColor="#000000"
+        android:textColor="#FFF"
         android:textStyle="bold"
         android:fontFamily="sans-serif-smallcaps"
         android:layout_width="wrap_content"
@@ -41,7 +51,7 @@
         android:id="@+id/exam_button"
         android:text="begin"
         android:fontFamily="monospace"
-        android:background="#a3162356"
+        android:background="#a3080e23"
         android:textSize="20sp"
         android:textColor="#fff"
         android:padding="20dp"
