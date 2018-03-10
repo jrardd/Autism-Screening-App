@@ -36,6 +36,7 @@
     <string name = "autism_info">Autism spectrum disorder (ASD) is a complex developmental disability,
         typically appearing during childhood and affecting a person\'\s ability to communicate and interact with others.</string>
     <string name="autism_diagram_description">As illustrated by the graph above, the basic symptoms of autism are often accompanied by other medical conditions and challenges. These, too, can vary widely in severity.</string>
+    <string name="autism_society_description">The Autism Society of America has been improving the lives of all affected by autism for over 50 years and envisions a world where individuals and families living with autism are able to maximize their quality of life, are treated with the highest level of dignity, and live in a society in which their talents and skills are appreciated and valued. We provide advocacy, education, information and referral, support, and community at national, state and local levels through our strong nationwide network of Affiliates.</string>
 
     <string-array name="Questions">
         <item name="question1">If you point at something across the room, does your child look at it?</item>

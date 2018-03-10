@@ -12,7 +12,7 @@
         />
 
     <View
-        android:background="#d6000e1a"
+        android:background="#b9000e1a"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:elevation="-1dp" />
@@ -32,7 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        app:cardBackgroundColor="#39000000">
+        app:cardBackgroundColor="#510f1a13">
     <TextView
         android:text="@string/mchat_intro"
         android:textSize="16sp"

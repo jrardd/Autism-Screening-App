@@ -32,7 +32,6 @@
         android:text="@string/autism_info"
         android:textColor="#fff3db"
         android:textSize="20sp"
-        android:textStyle="bold"
         android:padding="24dp"
         android:gravity="center"
         android:layout_width="wrap_content"
