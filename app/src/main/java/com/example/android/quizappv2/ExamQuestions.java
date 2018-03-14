@@ -1,6 +1,9 @@
 package com.example.android.quizappv2;
 
 import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -49,12 +52,11 @@ public class ExamQuestions extends AppCompatActivity {
         } else {
             i++;
             if (i == 20) {
+                updateProgressBar();
                 checkAnswer();
-                updateScore();
                 toScoreScreen();
             } else {
                 checkAnswer();
-                updateScore();
                 updateQuestion();
                 updateProgressBar();
                 choices.clearCheck();
@@ -86,15 +88,20 @@ public class ExamQuestions extends AppCompatActivity {
     public void updateQuestion() {
         String questionArray[] = getResources().getStringArray(R.array.Questions);
         TextView questionBox = findViewById(R.id.question_box);
+        TextView text = findViewById(R.id.progress_bar_text);
+        String num = String.valueOf((i + 1));
         questionBox.setText(questionArray[i]);
+        text.setText(num + " of 20");
     }
 
     public void updateProgressBar() {
         ProgressBar bar = findViewById(R.id.progress_bar);
-        TextView text = findViewById(R.id.progress_bar_text);
-        String num = String.valueOf((i + 1));
+        ProgressBar completeBar = findViewById(R.id.progress_bar_indeterminate);
         bar.incrementProgressBy(1);
-        text.setText(num + "/20");
+        if(bar.getProgress() == 20){
+            bar.setAlpha(0);
+            completeBar.setAlpha(1);
+        }
 
     }
 
@@ -115,11 +122,19 @@ public class ExamQuestions extends AppCompatActivity {
     }
 
     public void toScoreScreen() {
-        Intent i = new Intent(ExamQuestions.this, ScoreScreen.class);
-        i.putExtra("score", score);
-        startActivity(i);
-        overridePendingTransition(R.anim.fade_out, R.anim.fade_in);
-        finish();
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+                    public void run(){
+                Intent i = new Intent(ExamQuestions.this, ScoreScreen.class);
+                i.putExtra("score", score);
+                startActivity(i);
+                overridePendingTransition(R.anim.fade_out, R.anim.fade_in);
+                finish();
+            }
+        }, 3000);
+
+
     }
 
 }

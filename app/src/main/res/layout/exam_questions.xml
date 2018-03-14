@@ -1,109 +1,181 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bluebubble"
-    android:orientation="vertical"
-    android:padding="16dp"
+    android:background="@drawable/father_daughter"
     tools:context="com.example.android.quizappv2.ExamQuestions">
 
-    <ProgressBar
-        android:id="@+id/progress_bar"
-        style="?android:attr/progressBarStyleHorizontal"
+
+
+
+    <View
         android:layout_width="match_parent"
-        android:layout_height="16dp"
-        android:max = "20"
-        android:progress="1"
-        android:progressTint="#496cdf" />
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:background="#e7090a07"
+        android:elevation="-1dp" />
+
+
+
+
     <TextView
         android:id="@+id/progress_bar_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="1/20"
-        android:textSize="20sp" />
+        android:text="1 of 20"
+        android:textColor="#feffe2"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/progress_bar"
+        app:layout_constraintRight_toRightOf="@id/progress_bar"
+        app:layout_constraintTop_toBottomOf="@id/progress_bar" />
 
-        <TextView
-            android:id="@+id/score"
-            android:text="Score:"
-            android:textSize="20sp"
-            android:layout_alignParentRight="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-    </RelativeLayout>
-
-    <android.support.v7.widget.CardView
+    <!--<TextView
+        android:id="@+id/score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        app:cardBackgroundColor="#647a9bdc">
+        android:text="Score:"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="@id/progress_bar"
+        app:layout_constraintTop_toBottomOf="@id/progress_bar" /> -->
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/question_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="#00fff3a9"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".45">
 
         <TextView
             android:id="@+id/question_box"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="180dp"
             android:gravity="center"
             android:padding="20dp"
             android:text="@string/question1"
-            android:textColor="#000"
-            android:textSize="22sp"
+            android:textColor="#feffe2"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
     </android.support.v7.widget.CardView>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/example_button"
-            style="@style/ExampleButtonStyle"
+    <Button
+        android:id="@+id/example_button"
+        style="@style/ExampleButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="30dp"
+        android:alpha=".9"
+        android:onClick="exampleButton"
+        app:layout_constraintBottom_toTopOf="@id/question_card"
+        app:layout_constraintLeft_toLeftOf="@id/radio_group"
+        app:layout_constraintRight_toRightOf="@id/radio_group" />
+
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question_card">
+
+        <RadioButton
+            android:id="@+id/no_button"
+            style="@style/NoButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:onClick="exampleButton" />
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:alpha=".9" />
 
-
-        <RadioGroup
-            android:id="@+id/radio_group"
+        <RadioButton
+            android:id="@+id/yes_button"
+            style="@style/YesButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:orientation="horizontal">
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:alpha=".9" />
 
-            <RadioButton
-                android:id="@+id/yes_button"
-                style="@style/YesButtonStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="30dp"
-                android:layout_marginRight="30dp" />
 
-            <RadioButton
-                android:id="@+id/no_button"
-                style="@style/NoButtonStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginStart="30dp" />
+    </RadioGroup>
 
-        </RadioGroup>
+    <Button
+        android:id="@+id/next_button"
+        style="@style/NextButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha=".9"
+        android:onClick="nextButton"
+        android:padding="16dp"
+        app:layout_constraintLeft_toLeftOf="@id/radio_group"
+        app:layout_constraintRight_toRightOf="@id/radio_group"
+        app:layout_constraintTop_toBottomOf="@id/radio_group" />
 
-        <Button
-            android:id="@+id/next_button"
-            style="@style/NextButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:onClick="nextButton"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintLeft_toLeftOf="@id/radio_group"
+        app:layout_constraintRight_toRightOf="@id/radio_group"
+        app:layout_constraintTop_toBottomOf="@id/radio_group" />
 
-    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintLeft_toLeftOf="@id/radio_group"
+        app:layout_constraintRight_toRightOf="@id/radio_group"
+        app:layout_constraintTop_toBottomOf="@id/radio_group" />
 
-</LinearLayout>
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:max="20"
+        android:min="0"
+        android:rotation="-90"
+        android:progress="0"
+        android:progressDrawable="@drawable/circular"
+        app:layout_constraintBottom_toBottomOf="@id/example_button"
+        app:layout_constraintLeft_toLeftOf="@id/example_button"
+        app:layout_constraintRight_toRightOf="@id/example_button"
+        app:layout_constraintTop_toTopOf="@id/example_button" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_indeterminate"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:indeterminate="true"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:max="20"
+        android:min="0"
+        android:indeterminateTint="#FFFFDD00"
+        android:rotation="-90"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="@id/example_button"
+        app:layout_constraintLeft_toLeftOf="@id/example_button"
+        app:layout_constraintRight_toRightOf="@id/example_button"
+        app:layout_constraintTop_toTopOf="@id/example_button" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mailLabel = findViewById(R.id.mail_label);
         infoLabel = findViewById(R.id.jigsaw_label);
 
-        //add touch listener to transform labels
+        //add touch listener for transforming labels
 
         hubButton.setOnTouchListener(new View.OnTouchListener() {
             @Override

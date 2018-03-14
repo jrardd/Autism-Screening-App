@@ -31,17 +31,17 @@ public class ScoreScreen extends AppCompatActivity {
 
         if (score <= 2) {
             riskBox.setText("A score of " + score + " indicates low-risk");
-            description.setTextSize(18);
+            description.setTextSize(16);
             description.setText(R.string.low_risk_description);
             scoreBox.setTextColor(Color.parseColor("#278f5b"));
         } else if (score > 2 && score <= 7) {
             riskBox.setText("A score of " + score + " indicates medium-risk");
             description.setText(R.string.medium_risk_description);
-            description.setTextSize(11);
+            description.setTextSize(9);
             scoreBox.setTextColor(Color.parseColor("#c1ab00"));
         } else {
             riskBox.setText("A score of " + score + " indicates high-risk");
-            description.setTextSize(18);
+            description.setTextSize(16);
             description.setText(R.string.high_risk_description);
             scoreBox.setTextColor(Color.parseColor("#790600"));
         }

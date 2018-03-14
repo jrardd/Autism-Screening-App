@@ -12,7 +12,7 @@
         />
 
     <View
-        android:background="#b9000e1a"
+        android:background="#bd080a06"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:elevation="-1dp" />

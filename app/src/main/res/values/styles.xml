@@ -13,31 +13,6 @@
         <item name="android:windowCloseOnTouchOutside">true</item>
     </style>
 
-    <style name="CardStyle" parent="CardView">
-        <item name="android:layout_width">160dp</item>
-        <item name="android:layout_height">140dp</item>
-        <item name="android:layout_margin">8dp</item>
-        <item name="contentPadding">16dp</item>
-        <item name="cardCornerRadius">12dp</item>
-        <item name="cardElevation">0dp</item>
-
-    </style>
-
-    <style name="CardText" parent="CardView">
-        <item name="android:textSize">16sp</item>
-        <item name="android:textColor">#fff</item>
-        <item name="android:layout_marginTop">18dp</item>
-        <item name="android:layout_gravity">center</item>
-        <item name="android:gravity">center</item>
-        <item name="android:textStyle">bold</item>
-
-    </style>
-
-    <style name="LogoStyle">
-        <item name="android:layout_width">50dp</item>
-        <item name="android:layout_height">50dp</item>
-        <item name="android:layout_gravity">center_horizontal</item>
-    </style>
 
     <!-- Home HUB Button styles -->
     <style name="MChatButtonstyle" parent="Base.Widget.AppCompat.Button">
@@ -46,6 +21,10 @@
 
     <style name="AutismInfoButtonStyle" parent="Base.Widget.AppCompat.Button">
         <item name="android:background">@drawable/autism_info_btn</item>
+    </style>
+
+    <style name="ContactButtonStyle" parent="Base.Widget.AppCompat.Button">
+        <item name="android:background">@drawable/contact_btn</item>
     </style>
 
 
@@ -74,8 +53,8 @@
         <item name="android:background">@drawable/home_btn</item>
     </style>
 
-    <style name="ContactButtonStyle" parent="Base.Widget.AppCompat.Button">
-        <item name="android:background">@drawable/contact_btn</item>
+    <style name="EmailButtonStyle" parent="Base.Widget.AppCompat.Button">
+        <item name="android:background">@drawable/email_btn</item>
     </style>
 
     <style name="HintButtonStyle" parent="Base.Widget.AppCompat.Button">
