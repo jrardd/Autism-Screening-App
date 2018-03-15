@@ -13,7 +13,7 @@ public class ScoreScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.score_screen);
+        setContentView(R.layout.activity_score_screen);
         Bundle b = getIntent().getExtras();
         int score = b.getInt("score");
 

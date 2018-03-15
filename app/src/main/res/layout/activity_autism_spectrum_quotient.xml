@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/father_daughter"
-    tools:context="com.example.android.quizappv2.ExamQuestions">
+    tools:context="com.example.android.quizappv2.AutismSpectrumQuotient">
 
 
-
+    <include
+        layout="@layout/app_bar"/>
 
     <View
         android:layout_width="match_parent"
@@ -24,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="1 of 20"
+        android:text="1 of 50"
         android:textColor="#feffe2"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -42,30 +43,21 @@
         app:layout_constraintTop_toBottomOf="@id/progress_bar" /> -->
 
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/question_card"
+
+    <TextView
+        android:id="@+id/question_box"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        app:cardBackgroundColor="#00fff3a9"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="0dp"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/question1"
+        android:textColor="#feffe2"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias=".45">
+        app:layout_constraintVertical_bias=".5"/>
 
-        <TextView
-            android:id="@+id/question_box"
-            android:layout_width="wrap_content"
-            android:layout_height="180dp"
-            android:gravity="center"
-            android:padding="20dp"
-            android:text="@string/question1"
-            android:textColor="#feffe2"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-    </android.support.v7.widget.CardView>
 
 
     <Button
@@ -77,19 +69,12 @@
         android:layout_marginBottom="30dp"
         android:alpha=".9"
         android:onClick="exampleButton"
-        app:layout_constraintBottom_toTopOf="@id/question_card"
-        app:layout_constraintLeft_toLeftOf="@id/radio_group"
-        app:layout_constraintRight_toRightOf="@id/radio_group" />
+        app:layout_constraintBottom_toTopOf="@id/question_box"
+        app:layout_constraintLeft_toLeftOf="@id/question_box"
+        app:layout_constraintRight_toRightOf="@id/question_box" />
 
 
-    <RadioGroup
-        android:id="@+id/radio_group"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/question_card">
+
 
         <RadioButton
             android:id="@+id/no_button"
@@ -98,7 +83,10 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="40dp"
             android:layout_marginRight="40dp"
-            android:alpha=".9" />
+            android:alpha=".9"
+            app:layout_constraintCircle="@id/next_button"
+            app:layout_constraintCircleAngle="90"
+            app:layout_constraintCircleRadius="120dp"/>
 
         <RadioButton
             android:id="@+id/yes_button"
@@ -107,22 +95,26 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginStart="40dp"
-            android:alpha=".9" />
+            android:alpha=".9"
+            app:layout_constraintCircle="@id/next_button"
+            app:layout_constraintCircleAngle="270"
+            app:layout_constraintCircleRadius="120dp"/>
 
 
-    </RadioGroup>
+
 
     <Button
         android:id="@+id/next_button"
         style="@style/NextButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         android:alpha=".9"
         android:onClick="nextButton"
         android:padding="16dp"
-        app:layout_constraintLeft_toLeftOf="@id/radio_group"
-        app:layout_constraintRight_toRightOf="@id/radio_group"
-        app:layout_constraintTop_toBottomOf="@id/radio_group" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
 
     <TextView
         android:layout_width="wrap_content"

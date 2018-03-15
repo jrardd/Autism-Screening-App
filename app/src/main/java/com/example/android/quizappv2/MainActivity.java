@@ -3,9 +3,11 @@ package com.example.android.quizappv2;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
+import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -13,7 +15,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private Button toddlerButton, manButton, mapButton, mailButton, infoButton, hubButton;
@@ -24,6 +25,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        setToolBar("Home");
+
+
 
         //define buttons
 
@@ -41,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mapButton.setOnClickListener(this);
         infoButton.setOnClickListener(this);
         mailButton.setOnClickListener(this);
-        // hubButton.setOnClickListener(this);
+
 
         //define labels
 
@@ -87,7 +92,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (v.getId()) {
             case R.id.toddler:
-                i = new Intent(this, Exam.class);
+                i = new Intent(this, MChatIntro.class);
                 startActivity(i);
                 overridePendingTransition(R.anim.fade_out, R.anim.fade_in);
                 break;
@@ -105,7 +110,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.jigsaw:
-                i = new Intent(this, Info.class);
+                i = new Intent(this, Information.class);
                 startActivity(i);
                 overridePendingTransition(R.anim.fade_out, R.anim.fade_in);
                 break;
@@ -120,6 +125,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             default:
                 break;
         }
+    }
+
+    public void setToolBar(String screenTitle){
+        TextView title = findViewById(R.id.title_textview);
+        Toolbar toolbar = findViewById(R.id.tool_bar);
+        toolbar.setTitle(screenTitle);
+        setSupportActionBar(toolbar);
+        title.setText(toolbar.getTitle());
+
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
     }
 
 

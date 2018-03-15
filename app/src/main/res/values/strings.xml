@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name"></string>
+    <string name="app_name">Autism Screening</string>
     <string name="mchat_intro">Please answer these questions about your child. Keep in mind how your child usually behaves. If you have seen your child do the behavior a few times, but he or she does not usually do it, then please answer no. Please choose yes or no for every question. Thank you very much.</string>
     <string name="mchat_info">*The Modified Checklist for Autism in Toddlers-Revised (M-CHAT-R™) is a scientifically validated tool for screening children between 16 and 30 months of age that assesses risk for autism spectrum disorder (ASD).</string>
     <string name="question1">If you point at something across the room, does your child look at it?</string>
@@ -33,7 +33,7 @@
         children are at high risk for other developmental disorders or delays, and therefore, evaluation
         is warranted for any child who screens positive.</string>
 
-    <string name = "autism_info">Autism spectrum disorder (ASD) is a complex developmental disability,
+    <string name="autism_info">Autism spectrum disorder (ASD) is a complex developmental disability,
         typically appearing during childhood and affecting a person\'\s ability to communicate and interact with others.</string>
     <string name="autism_diagram_description">As illustrated by the graph above, the basic symptoms of autism are often accompanied by other medical conditions and challenges. These, too, can vary widely in severity.</string>
     <string name="autism_society_description">The Autism Society of America has been improving the lives of all affected by autism for over 50 years and envisions a world where individuals and families living with autism are able to maximize their quality of life, are treated with the highest level of dignity, and live in a society in which their talents and skills are appreciated and valued. We provide advocacy, education, information and referral, support, and community at national, state and local levels through our strong nationwide network of Affiliates.</string>

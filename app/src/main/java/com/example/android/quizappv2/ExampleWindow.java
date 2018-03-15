@@ -14,7 +14,7 @@ public class ExampleWindow extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_example_window);
+        setContentView(R.layout.popup_example_window);
         setExampleText();
         setDimensions();
     }
