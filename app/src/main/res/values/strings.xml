@@ -38,7 +38,7 @@
     <string name="autism_diagram_description">As illustrated by the graph above, the basic symptoms of autism are often accompanied by other medical conditions and challenges. These, too, can vary widely in severity.</string>
     <string name="autism_society_description">The Autism Society of America has been improving the lives of all affected by autism for over 50 years and envisions a world where individuals and families living with autism are able to maximize their quality of life, are treated with the highest level of dignity, and live in a society in which their talents and skills are appreciated and valued. We provide advocacy, education, information and referral, support, and community at national, state and local levels through our strong nationwide network of Affiliates.</string>
 
-    <string-array name="Questions">
+    <string-array name="MchatQuestions">
         <item name="question1">If you point at something across the room, does your child look at it?</item>
         <item name="question2">Have you ever wondered if your child might be deaf?</item>
         <item name="question3">Does your child play pretend or make-believe?</item>
@@ -81,6 +81,52 @@
         <item name="example18">If you don’t point, can your child understand “put the book on the chair” or “bring me the blanket”?</item>
         <item name="example19">If he or she hears a strange or funny noise, or sees a new toy, will he or she look at your face?.</item>
         <item name="example20">Being swung or bounced on your knee</item>
+    </string-array>
+
+    <string-array name="AutismSpectrumQuestions">
+    <item name="question1">I prefer to do things with others rather than on my own.</item>
+    <item name="question2">I prefer to do things the same way over and over again.</item>
+    <item name="question3">If I try to imagine something, I find it very easy to create a picture in my mind.</item>
+    <item name="question4">I frequently get so strongly absorbed in one thing that I lose sight of other things.</item>
+    <item name="question5">I often notice small sounds when others do not.</item>
+    <item name="question6">I usually notice car number plates or similar strings of information.</item>
+    <item name="question7">Other people frequently tell me that what I’ve said is impolite, even though I think it is polite.</item>
+    <item name="question8">When I’m reading a story, I can easily imagine what the characters might look like.</item>
+    <item name="question9">I am fascinated by dates.</item>
+    <item name="question10">In a social group, I can easily keep track of several different people’s conversations.</item>
+    <item name="question11">I find social situations easy.</item>
+    <item name="question12">I tend to notice details that others do not.</item>
+    <item name="question13">I would rather go to a library than a party.</item>
+    <item name="question14">I find making up stories easy.</item>
+    <item name="question15">I find myself drawn more strongly to people than to things.</item>
+    <item name="question16">I tend to have very strong interests which I get upset about if I can’t pursue.</item>
+    <item name="question17">I enjoy social chit-chat.</item>
+    <item name="question18">When I talk, it isn’t always easy for others to get a word in edgeways.</item>
+    <item name="question19">I am fascinated by numbers.</item>
+    <item name="question20">When I’m reading a story, I find it difficult to work out the characters’ intentions.</item>
+    </string-array>
+
+    <string-array name="AutismSpectrumAnswers">
+        <item name="question1">disagree</item>
+        <item name="question2">agree</item>
+        <item name="question3">disagree</item>
+        <item name="question4">agree</item>
+        <item name="question5">agree</item>
+        <item name="question6">agree</item>
+        <item name="question7">agree</item>
+        <item name="question8">disagree</item>
+        <item name="question9">agree</item>
+        <item name="question10">disagree</item>
+        <item name="question11">disagree</item>
+        <item name="question12">agree</item>
+        <item name="question13">agree</item>
+        <item name="question14">disagree</item>
+        <item name="question15">disagree</item>
+        <item name="question16">agree</item>
+        <item name="question17">disagree</item>
+        <item name="question18">agree</item>
+        <item name="question19">agree</item>
+        <item name="question20">agree</item>
     </string-array>
 
 </resources>

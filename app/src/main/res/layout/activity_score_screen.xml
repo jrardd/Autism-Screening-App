@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/father_daughter">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e607060d" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center_horizontal"
+        android:text="M-CHAT-R™"
+        android:textColor="#afffffff"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".05"
+         />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text=""
+        android:textSize="130sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".18" />
+
+    <Button
+        style = "@style/HomeButtonStyle"
+        android:id="@+id/mchat_home_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha=".8"
+        app:layout_constraintVertical_bias=".5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:onClick="homeButton"/>
+
+    <Button
+        style="@style/EmailButtonStyle"
+        android:id="@+id/mchat_email_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha=".8"
+        app:layout_constraintTop_toTopOf="@id/mchat_home_button"
+        app:layout_constraintBottom_toBottomOf="@id/mchat_home_button"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias=".08"
+        android:onClick="composeEmail"/>
+
+    <Button
+        style="@style/HintButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha=".8"
+        app:layout_constraintTop_toTopOf="@id/mchat_home_button"
+        app:layout_constraintBottom_toBottomOf="@id/mchat_home_button"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias=".92"
+        android:onClick="infoButton"/>
+
+    <TextView
+        android:id="@+id/risk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Risk"
+        android:textColor="#c0ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mchat_home_button" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:paddingHorizontal="30dp"
+        android:text="Description"
+        android:textColor="#caffffff"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/risk" />
+
+
+</android.support.constraint.ConstraintLayout>

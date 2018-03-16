@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.man:
-                i = new Intent(this, Contact.class);
+                i = new Intent(this, AutismSpectrumQuotient.class);
                 startActivity(i);
                 overridePendingTransition(R.anim.fade_out, R.anim.fade_in);
                 break;

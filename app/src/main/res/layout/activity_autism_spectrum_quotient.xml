@@ -9,7 +9,8 @@
 
 
     <include
-        layout="@layout/app_bar"/>
+        android:id="@+id/tool_bar"
+        layout="@layout/app_bar" />
 
     <View
         android:layout_width="match_parent"
@@ -18,12 +19,11 @@
         android:elevation="-1dp" />
 
 
-
-
     <TextView
         android:id="@+id/progress_bar_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:gravity="center_horizontal"
         android:text="1 of 50"
         android:textColor="#feffe2"
@@ -33,15 +33,15 @@
         app:layout_constraintRight_toRightOf="@id/progress_bar"
         app:layout_constraintTop_toBottomOf="@id/progress_bar" />
 
-    <!--<TextView
+    <TextView
         android:id="@+id/score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Score:"
+        android:textColor="#fff"
         android:textSize="20sp"
         app:layout_constraintRight_toRightOf="@id/progress_bar"
-        app:layout_constraintTop_toBottomOf="@id/progress_bar" /> -->
-
+        app:layout_constraintTop_toBottomOf="@id/progress_bar" />
 
 
     <TextView
@@ -50,57 +50,60 @@
         android:layout_height="150dp"
         android:gravity="center"
         android:padding="10dp"
-        android:text="@string/question1"
+        android:text="I prefer to do things with others rather than on my own."
         android:textColor="#feffe2"
-        android:textSize="18sp"
+        android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias=".5"/>
+        app:layout_constraintVertical_bias=".33" />
 
 
-
-    <Button
-        android:id="@+id/example_button"
-        style="@style/ExampleButtonStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="30dp"
+    <RadioButton
+        android:id="@+id/slightly_agree"
+        android:text="agree"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:alpha=".9"
-        android:onClick="exampleButton"
-        app:layout_constraintBottom_toTopOf="@id/question_box"
-        app:layout_constraintLeft_toLeftOf="@id/question_box"
-        app:layout_constraintRight_toRightOf="@id/question_box" />
+        app:layout_constraintCircle="@id/next_button"
+        app:layout_constraintCircleAngle="310"
+        app:layout_constraintCircleRadius="100dp"
+        style="@style/SlightlyAgreeStyle"/>
 
+    <RadioButton
+        android:id="@+id/strongly_agree"
+        android:text="agree"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:alpha=".9"
+        app:layout_constraintCircle="@id/next_button"
+        app:layout_constraintCircleAngle="50"
+        app:layout_constraintCircleRadius="100dp"
+        style="@style/StronglyAgreeStyle"/>
 
+    <RadioButton
+        android:id="@+id/slightly_disagree"
+        android:text="disagree"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:alpha=".9"
+        app:layout_constraintCircle="@id/next_button"
+        app:layout_constraintCircleAngle="230"
+        app:layout_constraintCircleRadius="100dp"
+        style="@style/SlightlyDisagreeStyle"/>
 
-
-        <RadioButton
-            android:id="@+id/no_button"
-            style="@style/NoButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="40dp"
-            android:layout_marginRight="40dp"
-            android:alpha=".9"
-            app:layout_constraintCircle="@id/next_button"
-            app:layout_constraintCircleAngle="90"
-            app:layout_constraintCircleRadius="120dp"/>
-
-        <RadioButton
-            android:id="@+id/yes_button"
-            style="@style/YesButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginStart="40dp"
-            android:alpha=".9"
-            app:layout_constraintCircle="@id/next_button"
-            app:layout_constraintCircleAngle="270"
-            app:layout_constraintCircleRadius="120dp"/>
-
-
+    <RadioButton
+        android:id="@+id/strongly_disagree"
+        android:text="disagree"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:alpha=".9"
+        app:layout_constraintCircle="@id/next_button"
+        app:layout_constraintCircleAngle="130"
+        app:layout_constraintCircleRadius="100dp"
+        style="@style/StronglyDisagreeStyle"/>
 
 
     <Button
@@ -108,66 +111,84 @@
         style="@style/NextButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:alpha=".9"
-        android:onClick="nextButton"
         android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".77" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="No"
+        android:layout_marginTop="10dp"
+        android:text="Definitely Disagree"
         android:textColor="#fff"
-        android:textSize="20sp"
-        app:layout_constraintHorizontal_bias="0.14"
-        app:layout_constraintLeft_toLeftOf="@id/radio_group"
-        app:layout_constraintRight_toRightOf="@id/radio_group"
-        app:layout_constraintTop_toBottomOf="@id/radio_group" />
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/strongly_disagree"
+        app:layout_constraintLeft_toLeftOf="@id/strongly_disagree"
+        app:layout_constraintRight_toRightOf="@id/strongly_disagree" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Yes"
+        android:layout_marginTop="10dp"
+        android:text="Slightly Disagree"
         android:textColor="#fff"
-        android:textSize="20sp"
-        app:layout_constraintHorizontal_bias="0.86"
-        app:layout_constraintLeft_toLeftOf="@id/radio_group"
-        app:layout_constraintRight_toRightOf="@id/radio_group"
-        app:layout_constraintTop_toBottomOf="@id/radio_group" />
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/slightly_disagree"
+        app:layout_constraintRight_toRightOf="@id/slightly_disagree"
+        app:layout_constraintTop_toBottomOf="@id/slightly_disagree" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Slightly Agree"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/slightly_agree"
+        app:layout_constraintRight_toRightOf="@id/slightly_agree"
+        app:layout_constraintBottom_toTopOf="@id/slightly_agree" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Definitely Agree"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/strongly_agree"
+        app:layout_constraintLeft_toLeftOf="@id/strongly_agree"
+        app:layout_constraintRight_toRightOf="@id/strongly_agree" />
+
 
     <ProgressBar
         android:id="@+id/progress_bar"
         style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
         android:max="20"
         android:min="0"
-        android:rotation="-90"
-        android:progress="0"
-        android:progressDrawable="@drawable/circular"
-        app:layout_constraintBottom_toBottomOf="@id/example_button"
-        app:layout_constraintLeft_toLeftOf="@id/example_button"
-        app:layout_constraintRight_toRightOf="@id/example_button"
-        app:layout_constraintTop_toTopOf="@id/example_button" />
+        android:progress="10"
+        app:layout_constraintLeft_toLeftOf="@id/tool_bar"
+        app:layout_constraintRight_toRightOf="@id/tool_bar"
+        app:layout_constraintTop_toBottomOf="@id/tool_bar" />
 
     <ProgressBar
         android:id="@+id/progress_bar_indeterminate"
-        style="@style/Widget.AppCompat.ProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
         android:indeterminate="true"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:max="20"
-        android:min="0"
-        android:indeterminateTint="#FFFFDD00"
-        android:rotation="-90"
         android:alpha="0"
-        app:layout_constraintBottom_toBottomOf="@id/example_button"
-        app:layout_constraintLeft_toLeftOf="@id/example_button"
-        app:layout_constraintRight_toRightOf="@id/example_button"
-        app:layout_constraintTop_toTopOf="@id/example_button" />
+        app:layout_constraintLeft_toLeftOf="@id/tool_bar"
+        app:layout_constraintRight_toRightOf="@id/tool_bar"
+        app:layout_constraintTop_toBottomOf="@id/tool_bar" />
 
 
 </android.support.constraint.ConstraintLayout>
